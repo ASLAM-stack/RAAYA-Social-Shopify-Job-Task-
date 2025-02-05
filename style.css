@@ -1,0 +1,160 @@
+ /* Font Link  */
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Poppins", serif; */
+ /* font-family: "Raleway", serif; */
+ /* font-family: "Nunito", serif; */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    
+}
+img{
+    width: 100%;
+}
+.header{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.hidden { transform: translateY(-100%); }
+.container{
+     
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ /* navber css start */
+ .logo{
+    width: 85px;
+ }
+ .hamburger{
+    display: none;
+    font-size: 30px;
+ }
+ .mobile-buttons{
+    display: none;
+ }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+.menu,ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #344054;
+    transition: 0.3s;
+}
+.menu li {
+    cursor: pointer;
+    position: relative;
+}
+.menu li:hover,.menu li a:hover ,.service:hover .arrow svg{
+    color: #A657E7;
+    fill: #A657E7;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+.service{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
+}
+.service:hover .dropdown{
+    display: block;
+}
+.arrow{
+    transition: 0.3s;
+}
+.service:hover .arrow{
+    transform: rotate(180deg);
+}
+.btn{
+    padding: 8px 27px;
+    border-radius: 24px;
+    background: white;
+    border:1px solid #D0D5DD;
+}
+.navbtn{
+    font-family: "Nunito", serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn-secondary{
+    border: 1px solid #A657E7;
+    color: #A657E7;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+ 
+@media (max-width:955px) {
+    .navbar{
+        padding: 15px 20px;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 10px 0;
+    }
+    .menu.active { display: flex; }
+    .menu li { text-align: center; padding: 10px 0; }
+    .buttons{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .mobile-buttons{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 20px;
+        
+    }
+    .dropdown {
+        position: static;
+        display: none;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+    }
+}
+
+/* Banner css */
+.mt{
+    margin-top: 100px;
+}
+.banner{
+    background: #F5F5F5;
+}
