@@ -1,9 +1,10 @@
  /* Font Link  */
- @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* font-family: "Poppins", serif; */
  /* font-family: "Raleway", serif; */
  /* font-family: "Nunito", serif; */
+ /*  font-family: "Inter", serif; */
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +23,13 @@ img{
     top: 0;
     left: 0;
     width: 100%;
+    background: white;
+}
+.btn-primary{
+    background: linear-gradient(177deg, #B564F7 8.45%, #6A2F9B 98.78%) !important;
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 400 !important;
 }
 .hidden { transform: translateY(-100%); }
 .container{
@@ -157,4 +165,138 @@ img{
 }
 .banner{
     background: #F5F5F5;
+}
+.banner-content{
+    display: flex;
+    gap: 20px;
+    height: 700px;
+    align-items: center;
+    justify-content: space-around;
+}
+.highlighted{
+    background: linear-gradient(90deg, #2B034D 26.84%, #B564F7 57.46%, #D37EF0 86.78%, #EF90FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.banner_text h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 65px; 
+    letter-spacing: -0.96px;
+}
+.light_price{
+    color: #D32E23;
+}
+.banner_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.banner_text p{
+    font-family: "Inter", serif;
+    font-size: 18px;
+    color: #344054;
+}
+.img_container{
+    display: flex;
+    gap: 20px;
+}
+.imgbox{
+    width: 296px;
+}
+.banner_text h5{
+    padding: 8px 16px;
+    background: #ffffff;
+    border-radius: 18px;
+    width: 250px;
+    font-size: 16px;
+    color: #344054;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.icon_container img{
+    width: 48px;
+    height: 48px;
+}
+.icon_container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.social{
+    max-width: 448px;
+    padding: 20px 24px;
+    background: white;
+    border-radius: 20px;
+    float: right;
+    margin-top: 20px;
+}
+.social h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:1200px) {
+    .banner_text h1{
+        font-size: 40px;
+    }
+    .imgbox{
+        width: 250px;
+    }
+    .banner-content{
+        padding: 0 10px;
+    }
+}
+@media  (max-width:930px) {
+    .banner_text h1{
+        font-size: 40px;
+    }
+    .banner-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .banner_text h5{
+        margin-top: 20px;
+    }
+}
+@media (max-width:580px) {
+    .img_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img_container .imgbox:nth-child(1){
+        display: none;
+    }
+    .banner-content{
+        height: auto;
+    }
+    .social{
+        float: none;
+    }
+    .banner_text p{
+        font-size: 16px;
+    }
+}
+@media (max-width:385px) {
+    .banner_text{
+        text-align: center;
+    }
+}
+@media (max-width:309px) {
+    .banner_text h1{
+        font-size: 35px;
+    }
 }
