@@ -54,9 +54,12 @@ img{
     align-items: center;
     padding: 15px 10px;
 }
-.menu,ul{
+.menu{
     display: flex;
     gap: 20px;
+    list-style: none;
+}
+.service .dropdown{
     list-style: none;
 }
 .menu li a {
@@ -169,7 +172,7 @@ img{
 .banner-content{
     display: flex;
     gap: 20px;
-    height: 700px;
+    min-height: 700px;
     align-items: center;
     justify-content: space-around;
 }
@@ -266,10 +269,15 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;
+        height:1000px;
+
     }
     .banner_text h5{
         margin-top: 20px;
+        text-align: center;
+    }
+    .banner_text {
+        text-align: center;
     }
 }
 @media (max-width:580px) {
@@ -281,7 +289,7 @@ img{
         display: none;
     }
     .banner-content{
-        height: auto;
+        height:1200px;
     }
     .social{
         float: none;
@@ -299,4 +307,156 @@ img{
     .banner_text h1{
         font-size: 35px;
     }
+}
+/* company logo section */
+.company{
+    height: 230px;
+    display: flex;
+    align-items: center;
+    
+}
+.company_title{
+    margin-left: 124px;
+}
+.company_title h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.company_title p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.line{
+    width: 1px;
+    height: 130px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 49.44%, rgba(102, 102, 102, 0.00) 100%);
+    display: block;
+    margin-left: 30px;
+}
+.logo-container {
+    width: 50%;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo-slider {
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-slider img {
+    width: 170px;  
+    height: 44px;
+    margin: 0 30px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-120%);
+    }
+}
+
+@media (max-width:930px) {
+    .company_title{
+        margin-left: 0;
+        text-align: center;
+    }
+    .company{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .line{
+       display: none;
+    }
+    .logo-container{
+        width: 100%;
+        flex-grow: 0;
+    }
+}
+
+/* Footer css */
+footer{
+    background: white;
+}
+.copyright{
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+}
+footer hr{
+    border:1px solid #D0D5DD;
+}
+.footer_logo{
+    font-family: "Inter", serif; 
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.footer_discription h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.footer_discription p{
+    font-size: 16px;
+    color: #344054;
+    margin-bottom: 32px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+.block li a {
+    font-size: 16px;
+    color: #344054;
+    text-decoration: none;
+}
+.links h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.footer_content{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+
+}
+.form input,.form textarea{
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    width: 243px;
+}
+.form input, .form text{
+    margin-bottom: 10px;
+}
+.form button{
+    width: 100%;
+    border-radius: 12px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 30px;
+     background: #000;
+     color: white;
+     font-size: 14px;
+     font-weight: 500;
+    padding: 18px 0;
+    margin-top: 5px;
 }
