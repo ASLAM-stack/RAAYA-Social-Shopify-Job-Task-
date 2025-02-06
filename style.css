@@ -595,6 +595,36 @@ padding: 12px 24px 24px 16px !important;
     height: 34px;
     
 }
+ /* slider */
+ .slide-container{
+    margin-top: 50px;
+ }
+ .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.slide-text{
+    font-size: 20px;
+    font-weight: 500;
+    color: #344054;
+    margin-top: 10px;
+}
   /* short css */
   .short {
     display: flex;
