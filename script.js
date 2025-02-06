@@ -12,3 +12,10 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 document.querySelector(".service").addEventListener("click", function() {
     this.classList.toggle("open");
 });
+
+function selectBox(selectedBox) {
+    document.querySelectorAll(".pricing-box").forEach(box => {
+        box.classList.remove("selected");
+    });
+    selectedBox.classList.add("selected");
+}

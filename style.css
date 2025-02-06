@@ -25,6 +25,9 @@ img{
     width: 100%;
     background: white;
 }
+.section_padding{
+    padding: 50px 0;
+}
 .btn-primary{
     background: linear-gradient(177deg, #B564F7 8.45%, #6A2F9B 98.78%) !important;
     color: white;
@@ -36,6 +39,23 @@ img{
      
     max-width: 1200px;
     margin: 0 auto;
+ }
+ .section_title{
+    text-align: center;
+ }
+ .section_title h1{
+    font-size: 48px;
+    font-weight: 700;
+ }
+ .section_title p{
+    font-size: 16px;
+    font-family: "Inter", serif; 
+ }
+ .titlt_light{
+    color: #A554E6;
+ }
+ .sectionBg{
+    background: #F5F5F5;
  }
  /* navber css start */
  .logo{
@@ -329,7 +349,7 @@ img{
 .line{
     width: 1px;
     height: 130px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000 49.44%, rgba(102, 102, 102, 0.00) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 49.44%, rgba(102, 102, 102, 0.00) 100%);
     display: block;
     margin-left: 30px;
 }
@@ -383,7 +403,122 @@ img{
         flex-grow: 0;
     }
 }
-
+/* creative section css */
+.heading img{
+    width: 48px;
+    height: 48px;
+}
+.heading h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.heading, .facility_title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.facility,.price_container{
+    width: 40%;
+}
+.facility_box p{
+    font-size: 14px;
+    color: #344054;
+    margin-left: 23px;
+}
+.creative_content{
+    margin-top: 50px;
+}
+.price_container .pricing-box{
+margin-bottom: 20px;
+}
+.facility_list:nth-of-type(1),
+.facility_list:nth-of-type(2) {
+    margin-bottom: 24px;
+}
+.max-line{
+    height: 336px !important;
+}
+.price_title h1{
+    color: #1D2939;
+    font-size: 18px; 
+    font-weight: 500;
+ 
+}
+.price_title p {
+    font-size: 16px;
+    color: #344054;
+}
+.pricing-box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    position: relative;
+}
+.checkmark {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #D0D5DD;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.pricing-box.selected .checkmark {
+    background-color: #A554E6;
+    border-color: #A554E6;
+    color: white;
+}
+.pricing-box.selected {
+    background: #e6f0ff;
+    border: 1px solid rgba(165, 84, 230, 0.58);
+}
+.value{
+    background: #475467;
+    font-size: 12px;
+    padding: 4px 12px;
+    color: white;
+    border-radius: 12px;
+}
+.crative-pro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.creative_content{
+    padding: 28px 24px;
+    background: white;
+    border-radius: 16px;
+}
+@media (max-width:931px) {
+    .crative-pro{
+        flex-direction: column;
+    }
+    .facility,.price_container{
+        width: 90%;
+    }
+    .max-line{
+        transform: rotate(90deg);
+        height: 100%;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .creative_content{
+        padding: 28px 15px;
+    }
+    .section_title{
+        padding: 0 20px;
+    }
+}
 /* Footer css */
 footer{
     background: white;
