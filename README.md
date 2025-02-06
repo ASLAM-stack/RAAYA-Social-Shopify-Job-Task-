@@ -29,5 +29,6 @@ To run the project locally, follow these steps:
    git clone https://github.com/ASLAM-stack/RAAYA-Social-Shopify-Job-Task-.git
    
 2. Navigate to the project folder:
+   ```bash
    cd social-media-marketing
 
