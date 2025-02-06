@@ -19,3 +19,32 @@ function selectBox(selectedBox) {
     });
     selectedBox.classList.add("selected");
 }
+// according
+const headers = document.querySelectorAll('.accordion-header');
+
+headers.forEach(header => {
+    header.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('span');
+        const allContents = document.querySelectorAll('.accordion-content');
+        const allIcons = document.querySelectorAll('.accordion-header span');
+
+        allContents.forEach(item => {
+            if (item !== content) {
+                item.style.display = 'none';
+            }
+        });
+
+        allIcons.forEach(i => {
+            i.textContent = '+';
+        });
+
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            icon.textContent = '+';
+        } else {
+            content.style.display = 'block';
+            icon.textContent = '-';
+        }
+    });
+});
